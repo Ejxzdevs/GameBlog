@@ -17,13 +17,24 @@
             height: 90%;
             background-color: #FFFFFF;
         }
+        .fm-lato {
+            font-family: 'Lato', sans-serif;
+        }
+        .fm-Orbitron{
+            font-family: 'Orbitron', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #15e8e8 50%, #ffffff 50%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     </style>
 </head>
 <body>
     <div class="container-fluid custom-vh-100 p-0 overflow-hidden">
         <div class="row custom-vh-10">
             <div class="col d-flex align-items-center" style="width: 50%">
-                <h3 class="text-white ps-2 fw-bold ">GameBlog</h3>
+                <h3 class="text-white ps-2 fw-bold fm-Orbitron  "><span class="gradient-text">G</span>ame<span class="gradient-text">B</span>lo<span class="gradient-text">g</span></h3>
             </div>
             <div class="col w-25" style="width: 400px">
                 @livewire('partials.navbar')
