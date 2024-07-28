@@ -3,7 +3,6 @@
     <div class="h-100 p-0 overflow-scroll overflow-x-hidden">
         <div class="h-25 d-flex justify-content-center align-items-center fm-lato fw-bold">
             <h1>GAMES</h1>
-            
         </div>
         <div class="h-auto d-flex flex-wrap gap-5 align-items-center py-5 ps-4">
             {{-- Card --}}
