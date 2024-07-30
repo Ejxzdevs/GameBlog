@@ -4,13 +4,10 @@ namespace App\Livewire\Modal;
 
 use Livewire\Component;
 
-class Signup extends Component
-{   
-  
-  
+class Signin extends Component
+{
     public function render()
     {
-        return view('livewire.modal.signup');
+        return view('livewire.modal.signin');
     }
- 
 }
