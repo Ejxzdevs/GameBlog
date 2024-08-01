@@ -25,7 +25,7 @@
 }
 .gradient-text {
     background: linear-gradient(45deg, #15e8e8 50%, #ffffff 50%);
-    -webkit-background-clip: text;
+     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .bg-color-footer {
@@ -45,24 +45,20 @@
 }
 
 /// modal signin and sign up
-.custom-modal-bg {
-    height: 100%;
-    background-color: #F5F5F5;
-}
 .signin-custom-form{
     height: 350px;
-    width: 320px;
+    width: 280px;
     background-color: #F5F5F5;
     border: none;
 }
 .signup-custom-form{
-    height: 480px;
-    width: 320px;
+    height: 450px;
+    width: 400px;
     background-color: #F5F5F5;
     border: none;
 }
 .custom-width{
-width: 280px;
+width: 320px;
 }
 
 .modal-close-btn {

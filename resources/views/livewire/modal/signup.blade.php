@@ -1,33 +1,54 @@
-<div >
-    <a href="#" class="text-decoration-none text-white fm-lato border btn btn-primary" data-bs-toggle="modal" data-bs-target="#SignUpModal">SIGN UP</a>
-<!-- Modal -->
-<div class="modal fade " id="SignUpModal" tabindex="-1" aria-hidden="true" data-bs-backdrop="static">
-    <div class="modal-dialog h-100">
-      <div class="modal-content custom-modal-bg">
-        <button type="button" class="btn-close modal-close-btn " data-bs-dismiss="modal" aria-label="Close"></button>
-      <div class="h-100 d-flex justify-content-center align-items-center">
-        <form action="" class="signup-custom-form">
-            <div class="d-flex flex-column justify-content-center align-items-center pt-2" style="height:20% ;">
-               <h4>Join Now!</h4>
-            </div>
-            <div class="d-flex flex-column justify-content-center ps-4 pt-5" style="height: 20%;">
-                <label class="form-label fw-medium">Email</label>
-                <input type="name" name="email" class="custom-width form-control" placeholder="Enter your email">
-            </div>
-            <div class="d-flex flex-column justify-content-center ps-4 pt-1" style="height: 40%;">
-                <label class="form-label fw-medium">Password</label>
-                <input type="password" name="password" class="custom-width form-control mb-2" placeholder="Enter your password">
-                <label class="form-label fw-medium">Confirm Password</label>
-                <input type="confirm-password" name="password" class="custom-width form-control" placeholder="Re-Enter your password">
-            </div>
-            <div class="d-flex flex-column justify-content-center ps-4" style="height: 20%;">
-                <button class="custom-width btn btn-dark letter-spacing-lg text-capitalize">Submit</button>
-            </div>
-        </form>
+<div>
+  <a href="#" class="text-decoration-none text-white fm-lato btn btn-primary" wire:click="openModal">SIGN UP</a>
+
+<div class="modal fade @if($showModal) show @endif " tabindex="-1" role="dialog " style="display: @if($showModal) block @else none @endif ; background-color: rgba(0, 0, 0, 0.5)">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content" style="background-color: #F5F5F5; border:none; border-radius: 0;">
+        <div class="modal-header" style="border: none">
+              <button style="border:none" type="button" class="modal-close-btn " wire:click="closeModal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+        </div>
+          <div class="modal-body">
+            <div class="h-100 d-flex justify-content-center align-items-center">
+              <form wire:submit.prevent="createUser" class="signup-custom-form d-flex flex-column gap-4" autocomplete="off">
+                  <div class="d-flex flex-column justify-content-center align-items-center pt-2 " style="height:15%;">
+                      <h4>Join Now!</h4>
+                  </div>
+                  <div class="d-flex flex-column justify-content-center ps-5  " style="height: 20%;">
+                      <label class="form-label fw-medium fs-sx">Email</label>
+                      <input wire:model="email" type="email" class="custom-width form-control" placeholder="Enter your email" >
+                      @error('email')
+                        <span class="text-danger fs-6">{{ $message }}</span>
+                      @enderror
+                  </div>
+                  <div class="d-flex flex-column justify-content-center ps-5  " style="height: 20%;">
+                      <label class="form-label fw-medium fs-sx">Password</label>
+                      <input wire:model="password" type="password" class="custom-width form-control " placeholder="Enter your password" >
+                      @error('password')
+                        <span class="text-danger fs-6 mb-2">{{ $message }}</span>
+                      @enderror
+                  </div>
+                  <div class="d-flex flex-column justify-content-center ps-5  " style="height: 20%;">
+                      <label class="form-label fw-medium fs-sx">Confirm Password</label>
+                      <input wire:model="repassword" type="password" class="custom-width form-control" placeholder="Re-Enter your password">
+                      @error('repassword')
+                        <span class="text-danger fs-6">{{ $message }}</span>
+                      @enderror
+                  </div>
+                  <div class="d-flex flex-column justify-content-center ps-5" style="height: 25%;">
+                      <button type="submit" class="custom-width btn btn-dark letter-spacing-lg text-capitalize">Submit</button>
+                  </div>
+              </form>
+          </div>
       </div>
-    </div>
-  </div>
+          </div>
+      </div>
+      
+  </div>   <!-- Modal -->
+
+
+{{-- root --}}
 </div>
 
 
-</div>
