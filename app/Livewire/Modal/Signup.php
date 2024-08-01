@@ -5,8 +5,7 @@ namespace App\Livewire\Modal;
 use App\Models\User;
 use Livewire\Component;
 use Illuminate\Support\Facades\Hash;
-use Livewire\Attributes\Rule;
-
+use Illuminate\Http\Request;
 class Signup extends Component
 
     {
@@ -17,25 +16,25 @@ class Signup extends Component
 
         // #[Rule('required|same:password')]
         public $repassword;
+        public $successMessage = "Successfully Create Account";
 
         public function createUser()
-        {   
-                // $this->validate();
-
-            $this-> validate([
+        {
+            $this->validate([
                 'email' => 'required|email|unique:users',
                 'password' => 'required|min:5',
                 'repassword' => 'required|same:password',
             ]);
+        
             User::create([
                 'email' => $this->email,
                 'password' => Hash::make($this->password),
             ]);
-    
-            $this->reset(['email', 'password','repassword']);
-           
+        
+            $this->reset(['email', 'password', 'repassword']);
+            $this->dispatch('alert-success', ['success' => $this->successMessage]);
         }
-
+        
         public $showModal = false;
     
         public function openModal()

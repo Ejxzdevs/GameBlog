@@ -1,6 +1,7 @@
 <div>
   <a href="#" class="text-decoration-none text-white fm-lato btn btn-primary" wire:click="openModal">SIGN UP</a>
 
+
 <div class="modal fade @if($showModal) show @endif " tabindex="-1" role="dialog " style="display: @if($showModal) block @else none @endif ; background-color: rgba(0, 0, 0, 0.5)">
   <div class="modal-dialog" role="document">
       <div class="modal-content" style="background-color: #F5F5F5; border:none; border-radius: 0;">
@@ -35,6 +36,9 @@
                       @error('repassword')
                         <span class="text-danger fs-6">{{ $message }}</span>
                       @enderror
+                  
+                  
+
                   </div>
                   <div class="d-flex flex-column justify-content-center ps-5" style="height: 25%;">
                       <button type="submit" class="custom-width btn btn-dark letter-spacing-lg text-capitalize">Submit</button>
@@ -46,8 +50,16 @@
       </div>
       
   </div>   <!-- Modal -->
-
-
+  {{-- for success modal --}}
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        Livewire.on('alert-success', event => {
+          console.log('Event received:', event); // Log entire event to debug
+            alert(event[0].success);
+        });
+    });
+</script>
+    
 {{-- root --}}
 </div>
 
