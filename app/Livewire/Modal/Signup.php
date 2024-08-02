@@ -5,7 +5,6 @@ namespace App\Livewire\Modal;
 use App\Models\User;
 use Livewire\Component;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Http\Request;
 class Signup extends Component
 
     {
@@ -37,12 +36,12 @@ class Signup extends Component
         
         public $showModal = false;
     
-        public function openModal()
+        public function openSignupModal()
         {
             $this->showModal = true;
         }
 
-        public function closeModal()
+        public function closeSignupModal()
         {
             $this->showModal = false;
         }
