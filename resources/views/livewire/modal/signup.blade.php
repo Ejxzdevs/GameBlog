@@ -12,7 +12,7 @@
         </div>
           <div class="modal-body">
             <div class="h-100 d-flex justify-content-center align-items-center">
-              <form wire:submit.prevent="UserEntry" class="signup-custom-form d-flex flex-column gap-4" autocomplete="off">
+              <form wire:submit.prevent="createUser" class="signup-custom-form d-flex flex-column gap-4" autocomplete="off">
                   <div class="d-flex flex-column justify-content-center align-items-center pt-2 " style="height:15%;">
                       <h4>Join Now!</h4>
                   </div>

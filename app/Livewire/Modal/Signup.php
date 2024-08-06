@@ -16,6 +16,7 @@ class Signup extends Component
         // #[Rule('required|same:password')]
         public $repassword;
         public $successMessage = "Successfully Create Account";
+        
 
         public function createUser()
         {
@@ -28,6 +29,7 @@ class Signup extends Component
             User::create([
                 'email' => $this->email,
                 'password' => Hash::make($this->password),
+                'user_type' => 'End_User',
             ]);
         
             $this->reset(['email', 'password', 'repassword']);
