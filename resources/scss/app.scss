@@ -43,14 +43,24 @@ $bg-themes-color: #7431F9;
     border-radius: 0 !important;
     
 }
+// modal notification
+.btn-open-profile{
+    background-color: transparent;
+    border: none;
+    color:white;
+
+}
 .notification-customize{
     width: 250px; 
     height: 300px; 
-    border-radius: 0 !important;
-    
-    
-  
-  
+    background-color: white;  
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 3.5em;
+    border: solid #d2d5d9.2px;
+    list-style: none;
+
 }
 /// footer
 .bg-color-footer {

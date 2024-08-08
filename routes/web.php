@@ -27,9 +27,15 @@ Route::get('/End-user-home', function () {
     return view('livewire.pages.end-user-home');
 })->name('end-user-home');
 
-// client side logout
+Route::get('/post', function () {
+    return view('livewire.pages.write-post');
+})->name('post');
+
+Route::get('/profile', function () {
+    return view('livewire.pages.profile');
+})->name('profile');
 
 Route::get('/logout', function () {
     Session::forget('user_type');
-    return redirect()->route('home'); // or wherever you want to redirect after logout
+    return redirect()->route('home'); 
 })->name('logout');

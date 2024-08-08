@@ -3,10 +3,10 @@
 @endphp
 
 @if ($userType === 'End_User')
-    <div class="h-100 d-flex justify-content-end align-items-center gap-4 ">
-        <a class="text-decoration-none text-white fm-lato" href="{{ route('end-user-home') }}"><i class="bi bi-pencil-square fs-5" class="nav-icon"></i>&nbsp;&nbsp;Write</a>
+    <div class="h-100 d-flex flex-row justify-content-end align-items-center gap-4 me-4 ">
+        <a class="text-decoration-none text-white fm-lato" href="{{ route('post') }}"><i class="bi bi-pencil-square fs-5" class="nav-icon"></i>&nbsp;&nbsp;Write</a>
         @livewire('modal.notification')
-        @livewire('modal.profile')
+        @livewire('modal.acc-option')
     </div>
 @else
     <div class="h-100 d-flex justify-content-end align-items-center gap-4 pe-3 fs-6">
