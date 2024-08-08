@@ -36,7 +36,7 @@
 
       </div>
   </div>
-  <div class="border-top border-secondary-50 d-flex justify-content-center align-items-center" style=" background-color:black;">
+  <div class="border-top border-secondary-50 d-flex justify-content-center align-items-center bg-color-footer-copyright" >
     <p class="fm-lato text-white my-2">&copy; 2024 Ejhay Gofredo. All rights reserved.</p>
   </div>
 </div>

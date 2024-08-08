@@ -11,7 +11,7 @@
     <div class="container-fluid custom-vh-100 m-0 p-0 overflow-hidden">
         <header class="row custom-vh-10 ">
             <div class="col d-flex align-items-center" style="width: 50%">
-                <h3 class="text-white ps-2 fw-bold fm-Orbitron  "><span class="gradient-text">G</span>ame<span class="gradient-text">B</span>lo<span class="gradient-text">g</span></h3>
+                <a class="text-white ps-2 fs-2 fw-bold fm-Orbitron" href="{{ route('home') }}" style="text-decoration: none;"><span class="gradient-text">G</span>ame<span class="gradient-text">B</span>lo<span class="gradient-text">g</span></a>
             </div>
             <nav class="col w-25" style="width: 400px">
                 @livewire('partials.navbar')
