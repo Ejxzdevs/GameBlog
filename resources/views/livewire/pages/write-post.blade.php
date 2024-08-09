@@ -1,5 +1,7 @@
 @extends('components.layouts.end-user')
 @section('pages')
-    <h1>end user posts</h1>
+<div class="write-container" >
+   <h5>wriet a posr</h5>
+</div>
 
 @endsection
