@@ -11,9 +11,7 @@ use Illuminate\Support\Facades\Session;
 class Signin extends Component
 {
 
-    public $email;
-    public $password;
-    public $showModal = false;
+    public $email,$password,$showModal = false;
 
     public function UserEntry()
 {

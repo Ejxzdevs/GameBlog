@@ -1,4 +1,4 @@
-<div> 
+<div style="z-index:1;"> 
     <button type="button" wire:click="booleanProfile" class="btn-open-profile">
         <i class="bi bi-person-circle {{ $focus ? 'text-info ' : 'text-white' }}; fs-4"></i>
     </button>

@@ -1,5 +1,5 @@
 <div >
-    <a href="#" class="text-decoration-none text-white fm-lato fs-6 me-3" wire:click="openLoginModal">SIGN IN</a>
+    <a href="#" class="text-decoration-none text-white fm-lato me-3" style="font-size: 1em" wire:click="openLoginModal">SIGN IN</a>
 <!-- Modal -->
 <div class="modal fade @if($showModal) show @endif " tabindex="-1" role="dialog " style="display: @if($showModal) block @else none @endif ; background-color: rgba(0, 0, 0, 0.5)">
     <div class="modal-dialog" role="document">

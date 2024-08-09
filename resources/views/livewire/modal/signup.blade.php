@@ -1,5 +1,5 @@
 <div>
-  <a href="#" class="text-decoration-none text-white fm-lato btn btn-primary" wire:click="openSignupModal">SIGN UP</a>
+  <a href="#" class="text-decoration-none text-white fm-lato btn btn-success" wire:click="openSignupModal">SIGN UP</a>
 
 
 <div class="modal fade @if($showModal) show @endif " tabindex="-1" role="dialog " style="display: @if($showModal) block @else none @endif ; background-color: rgba(0, 0, 0, 0.5)">

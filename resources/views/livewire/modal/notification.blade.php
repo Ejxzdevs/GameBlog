@@ -1,4 +1,4 @@
-<div> 
+<div style="z-index:2;"> 
     <button type="button" wire:click="booleanNotification" class="btn-open-profile">
         <i class="bi bi-bell fs-5 nav-icon {{ $focus ? 'text-info ' : 'text-white' }}; "></i>
     </button>
