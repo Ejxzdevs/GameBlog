@@ -27,8 +27,8 @@ Route::get('/End-user-home', function () {
     return view('livewire.pages.end-user-home');
 })->name('end-user-home');
 
-Route::post('/post', function () {
-    return view('livewire.pages.test');
+Route::get('/post', function () {
+    return view('livewire.pages.write-post');
 })->name('post');
 
 Route::get('/profile', function () {
@@ -37,5 +37,6 @@ Route::get('/profile', function () {
 
 Route::get('/logout', function () {
     Session::forget('user_type');
+    Session::forget('user_id');
     return redirect()->route('home'); 
 })->name('logout');

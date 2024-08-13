@@ -12,9 +12,6 @@ class AccOption extends Component
     public function booleanProfile() {
         $this->Profile = !$this->Profile;
         $this->focus = !$this->focus;
-        $this->dispatch('closeNotif');
-
-        
     }
     public function render()
     {

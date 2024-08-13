@@ -1,5 +1,6 @@
-@extends('components.layouts.end-user')
+@extends('components.layouts.app')
 @section('pages')
+<div>
     <h1>end user home</h1>
-    @livewire('partials.footer')
+</div>
 @endsection

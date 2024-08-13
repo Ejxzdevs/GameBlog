@@ -1,5 +1,5 @@
-<div class="h-100 ">
-  <div class="row bg-color-footer p-0 " style="height: 160px">
+<div>
+  <div class="row bg-color-footer p-0">
       <div class="col py-2">
         <h6 class="fm-lato text-dark-50 fw-bold ms-1"></h6>
       </div>

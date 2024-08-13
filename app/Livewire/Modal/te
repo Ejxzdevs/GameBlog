@@ -1,1 +1,0 @@
-@if($showModal) show @endif style="display: @if($showModal) block @else none @endif;
