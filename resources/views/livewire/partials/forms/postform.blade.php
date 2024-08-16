@@ -2,12 +2,15 @@
     <div class="h-100 justify-content-center align-items-center d-flex" style="z-index:1;">
        <form wire:submit.prevent="create" class="w-75 h-auto form-floating">
           <div class="h-25 align-items-end d-flex">
-             <h3>Create Post</h3>
+      
+             <h3>Create Post  {{ Auth::id()  }}</h3>
           </div>
           <div class="h-75 d-flex flex-column">
              <div class="form-floating mb-2">
                 <input wire:model="title" type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Title</label>
+                <label for="floatingInput">Title
+                  
+                </label>
               </div>
              <div class="form-floating mb-2">
                 <textarea wire:model="content" class="form-control " placeholder="Leave a comment here" id="floatingTextarea" style="height: 130px; "></textarea>

@@ -3,20 +3,21 @@
 namespace App\Livewire\Partials\Forms;
 use Livewire\WithFileUploads;
 use Livewire\Component;
+use Illuminate\Support\Facades\Auth;
 
 use App\Models\Post;
 
 class PostForm extends Component
 {
     public $title, $content, $image;
-    public $user_id;
+    // public $user_id;
     use WithFileUploads;
 
-    public function mount()
-    {
-        $this->user_id = session('user_id');
+    // public function mount()
+    // {
+    //     $this->user_id = Auth::id();
   
-    }
+    // }
 
     
 
@@ -33,7 +34,7 @@ class PostForm extends Component
         Post::create([
             'title' => $this->title,
             'content' => $this->content,
-            'user_id' => $this->user_id,
+            'user_id' => Auth::id(),
             'image_url' => $this->image->storeAs('images', $this->image->getClientOriginalName(), 'public'),
         ]);
         $this->reset();

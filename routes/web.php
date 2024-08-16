@@ -1,6 +1,7 @@
 <?php
-use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
+
 Route::get('/', function () {
     return view('livewire.pages.home');
 });
@@ -36,7 +37,5 @@ Route::get('/profile', function () {
 })->name('profile');
 
 Route::get('/logout', function () {
-    Session::forget('user_type');
-    Session::forget('user_id');
-    return redirect()->route('home'); 
+    return redirect()->route('/')->with(Auth::logout());; 
 })->name('logout');

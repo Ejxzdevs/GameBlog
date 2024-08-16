@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Session;
 
 
 
+
 class Signin extends Component
 {
 
@@ -16,18 +17,17 @@ class Signin extends Component
     public function UserEntry()
 {
   
-    $this->validate([
+    $validatedData = $this->validate([
         'email' => 'required|email',
         'password' => 'required',
     ]);
 
-    if (Auth::attempt(['email' => $this->email, 'password' => $this->password])) {
-        $user = Auth::user();
+    if (Auth::attempt($validatedData )) {
 
-        // dd($user->id);
-        // Store user type in the session
-        Session::put('user_type', $user->user_type);
-        Session::put('user_id', $user->id);
+        // // dd($user->id);
+        // // Store user type in the session
+        Session::put('user_type', Auth::user()->user_type);
+        Session::put('user_id', Auth::id());
 
         return redirect()->route('end-user-home');
         // return redirect()->route('home');

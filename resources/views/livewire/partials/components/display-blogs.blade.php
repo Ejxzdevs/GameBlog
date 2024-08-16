@@ -1,26 +1,32 @@
 <div >
-        <div class="d-flex justify-content-center align-items-center fm-lato fw-bold" style="height: 170px">
+        <div class="d-flex justify-content-center align-items-center fm-lato fw-bold" style="height: 130px">
             <h1>GAMES</h1>
+          
         </div>
-        <div class="h-auto d-flex flex-wrap gap-5 align-items-center py-5 ps-4">
+        <div class="h-auto d-flex flex-wrap gap-3 ps-4 align-items-center border-secondary-50">
             {{-- Card --}}
         @foreach ($posts as $post)
-            <div class="card pb-3 gap-2 mb-5" style="width: 24rem; height:365px ; border: none; background-color:#EDF1FF;">
-                <img src="{{ asset('storage/' . $post->image_url) }}" class="card-img-top p-1" style="height: 180px; background-position: center;  background-size: cover; object-fit: contain; flex-shrink: 0;">
-                <div class="card-body p-0 ">
-                    <p class="fm-Abel">{{$post->user->email}}</p>
-                    <h6 class="card-title overflow-y-hidden " style="height:40px">{{$post->title}}</h6>
-                    <p class="card-text overflow-y-hidden py-0 " style="height:75px "><a class="text-decoration-none text-secondary" href=""> </{{$post->content}}a></p>
-                </div>
-                <div class="card-body py-0 px-0 mb-2">
-                  <a href="#" class="card-link fm-lato" style="text-decoration: none;"><i class="bi bi-heart" style="color: black;"> 123</i></a>
-                  <a href="#" class="card-link fm-lato" style="text-decoration: none;"><i class="bi bi-chat  " style="color: black" > 45</i></a>
-                </div>
+            <div class="card pb-3 gap-2 border border-secondary-50 shadow-sm bg-white" style="width: 25rem; height:480px; border: none; background-color:#EDF1FF;">
+                <img src="{{ asset('storage/' . $post->image_url) }}" class="card-img-top p-1 border border-secondary-50" style="height: 230px; ">
+                <div class="card-body ">
+                    <p class="fm-Abel fst-normal" id="email" style="text-transform: capitalize; letter-spacing:1px;">{{$post->user->email}}</p>
+                    <h5 class="card-title overflow-y-hidden fw-bolder " style="height:30px">{{$post->title}}</h5>
+                    <p class="card-text overflow-y-hidden py-0 font-monospace" style="height:75px; text-indent: 15px;  "><a class="text-decoration-none text-secondary" href="">{{$post->content}} </a></p>
+                    <a href="#" class="card-link fm-lato" style="text-decoration: none;"><i class="bi bi-heart" style="color: black;"> 123</i></a>
+                    <a href="#" class="card-link fm-lato" style="text-decoration: none;"><i class="bi bi-chat  " style="color: black" > 45</i></a>
+                </div>        
             </div>
-
             @endforeach
         </div>
-       
+       <script>
+            const emailElements = document.querySelectorAll('#email');
+
+            emailElements.forEach((element) => {
+            const email = element.textContent;
+            const username = email.replace("@gmail.com", "");
+            element.textContent = username;
+        });
+       </script>
     </div>
 
 
