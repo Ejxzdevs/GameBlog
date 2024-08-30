@@ -28,6 +28,7 @@ class Signin extends Component
         // // Store user type in the session
         Session::put('user_type', Auth::user()->user_type);
         Session::put('user_id', Auth::id());
+        Session::put('user_email', Auth::user()->email);
 
         return redirect()->route('end-user-home');
         // return redirect()->route('home');

@@ -1,6 +1,9 @@
 <?php
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
+use App\Livewire\Pages\ViewUserPost;
+
 
 Route::get('/', function () {
     return view('livewire.pages.home');
@@ -36,6 +39,14 @@ Route::get('/profile', function () {
     return view('livewire.pages.profile');
 })->name('profile');
 
+// Route::get('/view/{postId}',ViewUserPost::class)->name('view');
+
+Route::get('/view/{postId}',function ($postId) {
+    return view('livewire.pages.view-user-post', ['postId' => $postId]);
+})->name('view');
+
 Route::get('/logout', function () {
-    return redirect()->route('/')->with(Auth::logout());; 
+    Auth::logout();
+    Session::flush();
+    return redirect()->route('home'); 
 })->name('logout');

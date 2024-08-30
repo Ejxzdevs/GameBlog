@@ -1,8 +1,8 @@
 <div style="z-index:2;"> 
-    <button type="button" wire:click="booleanNotification" class="btn-open-profile">
-        <i class="bi bi-bell fs-5 nav-icon {{ $focus ? 'text-info ' : 'text-white' }}; "></i>
-    </button>
-    <ul class="notification-customize" style="display: {{ $Notification ? 'block'  : 'none' }};">
+    <a class="nav-icon" wire:click="booleanNotification">
+        <i class="bi bi-bell {{ $focus ? 'text-info ' : 'text-white' }}; "></i>
+    </a>
+    <ul class="dropdown-modal" style="display: {{ $Notification ? 'block'  : 'none' }};">
         <li><a class="dropdown-item fw-normal" href="{{ route('logout') }}">1</a></li>
         <li><a class="dropdown-item fw-normal" href="{{ route('logout') }}">2</a></li>
     </ul>

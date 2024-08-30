@@ -1,10 +1,12 @@
 <div>
-  <a href="#" class="text-decoration-none text-white fm-lato btn btn-success" wire:click="openSignupModal">SIGN UP</a>
+  <a href="#" class="nav-icon" wire:click="openSignupModal">
+    <i class="bi bi-person-plus"></i>
+  </a>
 
 
 <div class="modal fade @if($showModal) show @endif " tabindex="-1" role="dialog " style="display: @if($showModal) block @else none @endif ; background-color: rgba(0, 0, 0, 0.5)">
   <div class="modal-dialog" role="document">
-      <div class="modal-content" style="background-color: #F5F5F5; border:none; border-radius: 0;">
+      <div class="modal-content primary-color" style="border:none; border-radius: 0;">
         <div class="modal-header" style="border: none">
               <button style="border:none" type="button" class="modal-close-btn " wire:click="closeSignupModal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>

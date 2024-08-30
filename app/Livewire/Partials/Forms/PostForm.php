@@ -10,16 +10,8 @@ use App\Models\Post;
 class PostForm extends Component
 {
     public $title, $content, $image;
-    // public $user_id;
+
     use WithFileUploads;
-
-    // public function mount()
-    // {
-    //     $this->user_id = Auth::id();
-  
-    // }
-
-    
 
     public function create()
     {   
