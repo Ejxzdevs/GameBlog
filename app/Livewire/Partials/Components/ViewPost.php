@@ -10,7 +10,7 @@ class ViewPost extends Component
 {
 
     public $postId;
-    public $totalLikes;
+  
 
     public function heart($userId,$postId){
         $like = Like::where('user_id', $userId)
@@ -35,8 +35,6 @@ class ViewPost extends Component
     public function render()
     {
         $post = Post::find($this->postId);
-        // $totalLikes = Like::find($this->postId);
-        $this->totalLikes = Like::where('post_id', $this->postId)->count('user_id');
         return view('livewire.partials.components.view-post',['post'=>$post]);
     }
 }
