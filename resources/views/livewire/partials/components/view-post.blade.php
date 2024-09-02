@@ -2,7 +2,7 @@
     <div class="gap-3 d-flex flex-column d-flex justify-content-center align-items-center">
         <div class="post-container p-5 gap-4">
             <p class="fw-bolder fs-3">{{$post->title}}</p>
-                <p >{{$post->content}}</p>
+                <p>{{$post->content}}</p>
             <div class="d-flex justify-content-center align-items-center">
                 <img src="{{ asset('storage/' . $post->image_url) }}" class="img-post card-img-top p-1" >
             </div>
@@ -10,7 +10,6 @@
                 $userId = Session::get('user_id');
                 $isLiked = Likes::isLiked($userId,$post->id);
                 $totalLikes = Likes::totalLikes($post->id);
-                
             @endphp
             <div class="ps-2 align-items-center gap-3 d-flex flex-row " style="height: 40px">
                     {{$totalLikes}}
