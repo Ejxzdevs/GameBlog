@@ -12,7 +12,7 @@
             $isLiked = Likes::ShowHearted($userId,$post->id);
         @endphp
         <div href="{{ route('view', ['postId' => $post->id]) }}" wire:navigate class="fade show card pb-3 border border-secondary-50 shadow-sm primary-color" style="width: 25rem; height:470px; border: none; background-color:#EDF1FF;">
-            <p class="fm-Abel d-flex align-items-center ps-3 pt-3 fw-bold " id="email" style="text-transform: capitalize; letter-spacing:1px; line-height:2rem;">{{$post->user->email}}
+            <p class="fm-Abel d-flex align-items-center ps-3 pt-3 fw-bold " id="email" style="text-transform: capitalize; letter-spacing:1px; line-height:2rem;">{{$username = explode('@', $post->user->email)[0]}}
             </p>
             <img src="{{ asset('storage/' . $post->image_url) }}" class="px-1 m-0" style="height:190px;  object-fit:fill; ">
                 <div class="align-items-center mt-4 ps-3 d-flex flex-row " style="height: 10px">
@@ -26,18 +26,14 @@
                         <a href="#" class="card-link fm-lato d-flex flex-row gap-2" style="text-decoration: none;"><i class="bi bi-chat-left  " style="color: black" ></i> <span style="color: black">comments</span></a>
                     </div>
                 </div>        
+                
             </div>
             @endforeach
         </div>
-       <script>
-            const emailElements = document.querySelectorAll('#email');
-
-            emailElements.forEach((element) => {
-            const email = element.textContent;
-            const username = email.replace("@gmail.com", "");
-            element.textContent = username;
-        });
-       </script>
+        <div class="d-flex justify-content-center align-items-center pt-5" style="height: 100px; ">
+                {{ $posts->links() }}
+        </div>
+    
     </div>
 
 

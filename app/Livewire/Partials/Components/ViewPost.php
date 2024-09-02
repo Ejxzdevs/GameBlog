@@ -34,7 +34,7 @@ class ViewPost extends Component
     }
     public function render()
     {
-        $post = Post::find($this->postId);
+        $post = Post::with('user')->find($this->postId);
         return view('livewire.partials.components.view-post',['post'=>$post]);
     }
 }

@@ -4,18 +4,15 @@ namespace App\Livewire\Partials\Components;
 
 use Livewire\Component;
 use App\Models\Post;
+use Livewire\WithPagination;
+
 class DisplayBlogs extends Component
 {
-
-    public $posts;
-
-    public function mount()
-    {
-        $this->posts = Post::with('user')->get();
-    }
+    use WithPagination;
 
     public function render()
     {
-        return view('livewire.partials.components.display-blogs');
+        $posts = Post::with('user')->paginate(12);
+        return view('livewire.partials.components.display-blogs',['posts' =>  $posts ]);
     }
 }

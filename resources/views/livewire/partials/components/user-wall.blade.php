@@ -1,7 +1,7 @@
 <div class="w-100 gap-3 d-flex flex-column d-flex justify-content-center align-items-center">
     @foreach ($posts as $post)
     <div href="{{ route('view', ['postId' => $post->id]) }}" wire:navigate class="post-container p-5 gap-3">
-        <p class="fm-Abel d-flex align-items-center fw-bold " id="email" style="text-transform: capitalize; letter-spacing:1px; line-height:2rem;">{{$post->user->email}}
+        <p class="fm-Abel d-flex align-items-center fw-bold " id="email" style="text-transform: capitalize; letter-spacing:1px; line-height:2rem;">{{$username = explode('@', $post->user->email)[0]}}
         </p>
         <p class="fw-bolder fs-3">{{$post->title}}</p>
         <p >{{$post->content}}</p>
@@ -22,13 +22,4 @@
         </div>
     </div>
     @endforeach
-    <script>
-        const emailElements = document.querySelectorAll('#email');
-
-        emailElements.forEach((element) => {
-        const email = element.textContent;
-        const username = email.replace("@gmail.com", "");
-        element.textContent = username;
-    });
-   </script>
 </div>

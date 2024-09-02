@@ -1,6 +1,8 @@
 <div class="p-5" style="height: auto;">
     <div class="gap-3 d-flex flex-column d-flex justify-content-center align-items-center">
         <div class="post-container p-5 gap-4">
+            <p class="fm-Abel d-flex align-items-center fw-bold " id="email" style="text-transform: capitalize; letter-spacing:1px; line-height:2rem;">{{$username = explode('@', $post->user->email)[0]}}
+            </p>
             <p class="fw-bolder fs-3">{{$post->title}}</p>
                 <p>{{$post->content}}</p>
             <div class="d-flex justify-content-center align-items-center">
@@ -19,7 +21,6 @@
                 <a href="#" class="card-link fm-lato d-flex flex-row gap-2" style="text-decoration: none; "><i class="bi bi-chat-left" style="color: black" ></i><span style="color: black">comments</span></a>
             </div>
         </div>
-       
     </div>
 
 </div>
