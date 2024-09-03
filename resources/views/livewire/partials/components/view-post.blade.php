@@ -1,10 +1,10 @@
 <div class="p-5" style="height: auto;">
     <div class="gap-3 d-flex flex-column d-flex justify-content-center align-items-center">
         <div class="post-container p-5 gap-4">
-            <p class="fm-Abel d-flex align-items-center fw-bold " id="email" style="text-transform: capitalize; letter-spacing:1px; line-height:2rem;">{{$username = explode('@', $post->user->email)[0]}}
-            </p>
-            <p class="fw-bolder fs-3">{{$post->title}}</p>
-                <p>{{$post->content}}</p>
+            <p class="custom-email"><img src="{{ asset('storage/images/default.png') }}" > <span>{{$username = explode('@', $post->user->email)[0]}}
+            </span></p>
+            <p class="fw-bolder title-size custom-title">{{$post->title}}</p>
+                <p class="content-color">{{$post->content}}</p>
             <div class="d-flex justify-content-center align-items-center">
                 <img src="{{ asset('storage/' . $post->image_url) }}" class="img-post card-img-top p-1" >
             </div>
