@@ -10,7 +10,7 @@
                 <img src="{{ asset('storage/images/default.png') }}" style="height: 100px" >
             </div>
             <div class="h-100 d-flex justify-content-center align-items-center pb-3">
-                <h3 id="username">{{$email}}</h3>
+                <h3 id="username">{{$username = explode('@', $email)[0]}}</h3>
             </div>
         </div>
     </div>
@@ -19,14 +19,5 @@
                 @livewire('partials.components.user-wall')
             </div>
         </div>
-        <script>
-            const emailElements = document.querySelectorAll('#username');
-
-            emailElements.forEach((element) => {
-            const email = element.textContent;
-            const username = email.replace("@gmail.com", "");
-            element.textContent = username;
-        });
-       </script>
 </div>
 @endsection
