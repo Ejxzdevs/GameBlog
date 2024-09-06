@@ -1,5 +1,5 @@
 <div>
-  <div class="row bg-color-footer p-0">
+  <div class="row bg-color-footer p-0 border border-secondary-50">
       <div class="col py-2">
         <h6 class="fm-lato text-dark-50 fw-bold ms-1"></h6>
       </div>
@@ -8,11 +8,11 @@
             <h6 class="fm-lato text-dark-50 fw-bold ms-1">Quick Links</h6>
           </div>
           <div class="h-75 d-flex flex-row flex-wrap ps-1 gap-2 pt-3 pb-5">
-              <a class="text-decoration-none ms-1 me-5 fw-medium fm-lato anchor-hover" href="">Home</a>
-              <a class="text-decoration-none ms-1 me-5 fw-medium fm-lato anchor-hover" href="">Blog</a>
-              <a class="text-decoration-none ms-1 me-5 fw-medium fm-lato anchor-hover" href="">About</a>
-              <a class="text-decoration-none ms-1 me-5 fw-medium fm-lato anchor-hover" href="">Sign In</a>
-              <a class="text-decoration-none ms-1 me-5 fw-medium fm-lato anchor-hover" href="">Sign Up</a>
+              <a class="text-decoration-none ms-1 me-5 fw-medium fm-lato anchor-hover" href="{{ route('home') }}">Home</a>
+              <a class="text-decoration-none ms-1 me-5 fw-medium fm-lato anchor-hover" href="{{ route('blog') }}">Blog</a>
+              <a class="text-decoration-none ms-1 me-5 fw-medium fm-lato anchor-hover" href="{{ route('about') }}">About</a>
+              @livewire('modal.signin')
+              @livewire('modal.signup')
           </div>
         </div>
       <div class="col py-2">

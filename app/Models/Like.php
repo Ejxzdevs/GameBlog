@@ -12,14 +12,13 @@ class Like extends Model
     protected $primaryKey = 'id';
     protected $fillable = ['user_id','post_id'];
 
-    public function user()
+    public function users()
     {
         return $this->belongsTo(User::class);
     }
 
-    public function post()
+    public function posts()
     {
         return $this->belongsTo(Post::class);
-
     }
 }

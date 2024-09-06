@@ -1,14 +1,21 @@
 <div>
-  <a href="#" class="nav-icon" wire:click="openSignupModal">
-    <i class="bi bi-person-plus"></i>
-  </a>
+  @php
+  $userId = Session::get('user_id');
+@endphp
+  @if($userId)
+    <a href="#" class="text-decoration-none ms-1 me-5 fw-medium fm-lato anchor-hover" wire:click="openSignupModal">Sign Up</a>
+  @else
+    <a href="#" class="nav-icon" wire:click="openSignupModal">
+      <i class="bi bi-person-plus"></i>
+    </a>
+  @endif
 
 
 <div class="modal fade @if($showModal) show @endif " tabindex="-1" role="dialog " style="display: @if($showModal) block @else none @endif ; background-color: rgba(0, 0, 0, 0.5)">
   <div class="modal-dialog" role="document">
       <div class="modal-content primary-color" style="border:none; border-radius: 0;">
         <div class="modal-header" style="border: none">
-              <button style="border:none" type="button" class="modal-close-btn " wire:click="closeSignupModal" aria-label="Close">
+              <button style="border:none" type="button" class="modal-close-btn primary-color" wire:click="closeSignupModal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
               </button>
         </div>

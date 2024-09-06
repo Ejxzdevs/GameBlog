@@ -29,9 +29,7 @@ class Signin extends Component
         Session::put('user_type', Auth::user()->user_type);
         Session::put('user_id', Auth::id());
         Session::put('user_email', Auth::user()->email);
-
-        return redirect()->route('end-user-home');
-        // return redirect()->route('home');
+        return redirect()->route('home');
     } else {
         return redirect()->back();
     }

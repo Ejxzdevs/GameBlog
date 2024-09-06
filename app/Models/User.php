@@ -12,13 +12,13 @@ class User extends Authenticatable
     use HasFactory, Notifiable;
 
     // foreign key
-    public function post()
+    public function posts()
     {
         return $this->hasMany(Post::class);
 
     }
 
-    public function like()
+    public function likes()
     {
         return $this->hasMany(Like::class);
     }

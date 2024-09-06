@@ -11,7 +11,7 @@ class Likes {
     }
     public static function totalLikes($postId){
         $totalLikes = Like::where('post_id', $postId)->count('user_id');
-        return $totalLikes ? $totalLikes . ' Reacted' : '0 React';
+        return $totalLikes > 1 ? $totalLikes . ' likes' : ($totalLikes == 1 ? '1 like' : '0');
     }
 
     public static function ShowHearted($userId,$postId){
@@ -19,4 +19,6 @@ class Likes {
                    ->where('post_id', $postId)
                    ->first();
     }
+
+    
 }

@@ -49,6 +49,21 @@ html,body{
     font-family: 'Abel';
 }
 
+
+// THEMES
+
+.primary-color{
+    background-color: $primary-color ;
+}
+
+/// footer
+.bg-color-footer {
+    background-color: $primary-color;
+}
+.bg-color-footer-copyright{
+    background-color: $bg-themes-color;
+}
+
 // NAV BAR
 .gradient-text {
     background: linear-gradient(45deg, #15e8e8 50%, #ffffff 50%);
@@ -118,27 +133,9 @@ html,body{
    
 }
 
-// write post module
 
-.write-container{
-    // background: yellow; 
-    height:100%; 
-    overflow-y:auto;
-}
 
-// themes 
 
-.primary-color{
-    background-color: $primary-color ;
-}
-
-/// footer
-.bg-color-footer {
-    background-color: $primary-color;
-}
-.bg-color-footer-copyright{
-    background-color: $bg-themes-color;
-}
 
 
 
@@ -176,6 +173,14 @@ width: 320px;
     color: black;
 }
 
+// write post module
+
+.write-container{
+    // background: yellow; 
+    height:100%; 
+    overflow-y:auto;
+}
+
 .post-container{
     height: 650px;
     // border: solid 1px black;    
@@ -186,7 +191,7 @@ width: 320px;
     color: black;
     text-decoration: none;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    border: solid .1px grey;
+    border: solid .1px rgb(205, 199, 199);
 
     & .img-post{
         height: 300px; 
@@ -221,3 +226,44 @@ width: 320px;
         filter: drop-shadow(4px 4px 0 0);
     }
 }
+
+/// about module
+
+/* Header styling */
+.welcome-container {
+    margin: 0 auto;
+    padding: 3rem 4rem;
+    border-radius: 5px;
+    background-color: $primary-color;
+    height: 100%;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+}
+
+/* Content styling */
+.content p {
+    margin-bottom: 20px;
+}
+
+.content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .welcome-container {
+        padding: 15px;
+    }
+
+    .header h1 {
+        font-size: 2em;
+    }
+}
+
