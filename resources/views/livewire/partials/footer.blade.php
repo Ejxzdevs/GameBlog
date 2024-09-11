@@ -11,8 +11,8 @@
               <a class="text-decoration-none ms-1 me-5 fw-medium fm-lato anchor-hover" href="{{ route('home') }}">Home</a>
               <a class="text-decoration-none ms-1 me-5 fw-medium fm-lato anchor-hover" href="{{ route('blog') }}">Blog</a>
               <a class="text-decoration-none ms-1 me-5 fw-medium fm-lato anchor-hover" href="{{ route('about') }}">About</a>
-              @livewire('modal.signin')
-              @livewire('modal.signup')
+              @livewire('modal.footer-signin')
+              @livewire('modal.footer-signup')
           </div>
         </div>
       <div class="col py-2">
