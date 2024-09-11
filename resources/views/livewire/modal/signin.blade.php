@@ -1,14 +1,7 @@
 <div >
-    @php
-         $userId = Session::get('user_id');
-    @endphp
-    @if($userId)
-        <a href="#" class="text-decoration-none ms-1 me-5 fw-medium fm-lato anchor-hover" wire:click="openLoginModal">Sign In</a>
-    @else
-        <a href="#" class="nav-icon" wire:click="openLoginModal"><i class="bi bi-box-arrow-in-right"></i>
+    <a href="#" class="nav-icon" wire:click="openLoginModal">
+        <i class="bi bi-box-arrow-in-right"></i>
     </a>
-    @endif
-    
 <!-- Modal -->
 <div class="modal fade @if($showModal) show @endif " tabindex="-1" role="dialog " style="display: @if($showModal) block @else none @endif ; background-color: rgba(0, 0, 0, 0.5)">
     <div class="modal-dialog" role="document">
@@ -46,8 +39,5 @@
         </div>
             </div>
         </div>
-        
     </div>   <!-- Modal -->
-
-
 </div>

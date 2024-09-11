@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Livewire\Modal;
-
 use App\Models\User;
 use Livewire\Component;
 use Illuminate\Support\Facades\Hash;

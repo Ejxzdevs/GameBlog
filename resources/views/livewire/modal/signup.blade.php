@@ -1,14 +1,14 @@
 <div>
-  @php
+  {{-- @php
   $userId = Session::get('user_id');
 @endphp
   @if($userId)
     <a href="#" class="text-decoration-none ms-1 me-5 fw-medium fm-lato anchor-hover" wire:click="openSignupModal">Sign Up</a>
-  @else
+  @else --}}
     <a href="#" class="nav-icon" wire:click="openSignupModal">
       <i class="bi bi-person-plus"></i>
     </a>
-  @endif
+  {{-- @endif --}}
 
 
 <div class="modal fade @if($showModal) show @endif " tabindex="-1" role="dialog " style="display: @if($showModal) block @else none @endif ; background-color: rgba(0, 0, 0, 0.5)">
