@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Session;
 Route::get('/', function () {
     return view('livewire.pages.home');
 });
-// Webpage available for non authicated End User
+// Webpage available for non authenticated End User
 Route::get('/home', function () {
     return view('livewire.pages.home');
 })->name('home'); // Home Page
@@ -21,7 +21,7 @@ Route::get('/view/{postId}',function ($postId) {
     return view('livewire.pages.view-user-post', ['postId' => $postId]);
 })->name('view');
 
-// authicated End User
+// authenticated End User
 Route::middleware('is_user')->group(function () {
     Route::get('/post', function () {
         return view('livewire.pages.write-post');
