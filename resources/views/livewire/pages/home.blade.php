@@ -8,11 +8,11 @@
               Level Up: The Newest Trends You Need to Know
           </p>
       </div>
-  <div class="d-flex flex-row ps-3 gap-3">
-    <div class="mt-3 " style="width:65%;">
+  <div class="d-flex flex-row ps-3 pb-3 gap-3 overflow-hidden" style=" height: 133vh;  " >
+    <div class="mt-3 " style="width:65%; ">
         @livewire('partials.components.popular-blogs')
     </div>
-    <div  class="mt-3" style="width:35%;">
+    <div class="mt-3" style="width:35%;">
       @livewire('partials.components.latest-blogs')
     </div>
   </div>
