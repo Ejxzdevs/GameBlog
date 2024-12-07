@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="custom-vh-100">
-        <header class="row custom-vh-10 ">
+        <header class="row custom-vh-10" style="padding: 0 3rem" >
             <div class="col d-flex align-items-center" style="width: 50%">          
                 <a class="text-white ps-2 fs-2 fw-bold fm-Orbitron" href="{{ route('home') }}" style="text-decoration: none;"><span class="gradient-text">G</span>ame<span class="gradient-text">B</span>lo<span class="gradient-text">g</span></a>
             </div>
@@ -17,7 +17,7 @@
                 @livewire('partials.navbar')
             </nav>
         </header>
-        <main class="row custom-vh-90 p-0">
+        <main class=" row custom-vh-90 " style="padding: 0 3rem">
             @yield('pages')
         </main>
     </div>
