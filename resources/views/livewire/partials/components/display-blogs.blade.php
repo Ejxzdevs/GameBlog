@@ -34,9 +34,9 @@
                 <div class="px-3 mt-3 mb-2" style="height: 5px">
                     <p class="text-primary" style="font-size: 10px:"  >{{$totalLikes}}</p>
                 </div>
-                <div class="card-body text-white">
-                    <label class="card-title overflow-y-hidden fw-medium fs-6" style="height:20px">{{$post->title}}</label>
-                    <p class="card-text overflow-y-hidden py-0 text-justify" style="height:50px;  word-wrap: break-word; font-size: 12px; font-family:Arial, Helvetica, sans-serif;  ">{{$post->content}}</p>
+                <div class="card-body ">
+                    <label class="text-white card-title overflow-y-hidden fw-medium fs-6" style="height:20px">{{$post->title}}</label>
+                    <p class="text-secondary card-text overflow-y-hidden py-0 text-justify" style="height:50px;  word-wrap: break-word; font-size: 12px; font-family:Arial, Helvetica, sans-serif;  ">{{$post->content}}</p>
                     <div class="d-flex flex-row">
                         <a href="#" class="card-link fm-lato d-flex flex-row gap-2" style="text-decoration: none;"><i class="bi bi-heart-fill" style="color: {{  $isLiked ? 'red' : 'black' }};"></i> <span class="text-white" >Heart</span></a>
                         <a href="#" class="card-link fm-lato d-flex flex-row gap-2" style="text-decoration: none;"><i class="bi bi-chat-left text-white" ></i> <span class="text-white">comments</span></a>
