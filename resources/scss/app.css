@@ -12081,16 +12081,15 @@ html, body {
 }
 
 .signin-custom-form {
-  height: 350px;
   width: 280px;
-  background-color: #EDF1FF;
+  background-color: #181047;
   border: none;
 }
 
 .signup-custom-form {
   height: 450px;
   width: 400px;
-  background-color: #EDF1FF;
+  background-color: #181047;
   border: none;
 }
 
