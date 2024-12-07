@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 namespace App\Livewire\Partials\Components;
 
@@ -10,9 +10,14 @@ class DisplayBlogs extends Component
 {
     use WithPagination;
 
+    public $name = '';
     public function render()
     {
-        $posts = Post::with('user')->paginate(12);
-        return view('livewire.partials.components.display-blogs',['posts' =>  $posts ]);
+        $posts = Post::query() 
+            ->when($this->name, function ($query) {
+                $query->where('title', 'like', '%' . $this->name . '%');
+            })
+            ->paginate(12);
+        return view('livewire.partials.components.display-blogs', ['posts' => $posts]);
     }
 }
