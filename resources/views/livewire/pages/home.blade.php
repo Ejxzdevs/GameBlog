@@ -10,7 +10,7 @@
     </div>
   </div>
     <div>
-        @livewire('partials.footer')
+      
     </div>
 </div>
 @endsection

@@ -5,7 +5,7 @@
         @livewire('partials.components.system-description')
     </div>
     <div>
-        @livewire('partials.footer')
+        
     </div>
 </div>
 @endsection
