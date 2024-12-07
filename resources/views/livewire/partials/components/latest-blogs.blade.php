@@ -1,13 +1,13 @@
-<div class="gap-4 pt-1 ">
-    <div class="d-flex flex-column primary-color shadow-sm mt-5 gap-3 pb-5 px-3 " style="cursor: pointer;">
-       <p class="ms-2 mt-2 fw-medium">Latest</p>
+<div >
+    <label class="text-white card-title display-3 overflow-y-hidden custom-title fw-medium" style="font-size:24px;">LATEST TRENDS</label>
+    <div class="d-flex flex-column shadow-sm mt-2 gap-3 pb-5 px-3 rounded " style="cursor: pointer; background-color: #101218;">
        @foreach($posts as $post)
-            <div href="{{ route('view', ['postId' => $post->id]) }}" wire:navigate class="d-flex flex-column ps-3 mb-3">
+            <div href="{{ route('view', ['postId' => $post->id]) }}" wire:navigate class="d-flex flex-column ps-1 my-2">
                 <div class="d-flex flex-row">   
-                    <img class="mt-1" src="{{ asset('storage/images/default.png') }}" style="height:20px;" ><p class="ms-2 fw-normal text-secondary">{{$post->title}}</p>
+                    <img class="mt-1" src="{{ asset('storage/images/default.png') }}" style="height:20px;" ><p class="ms-2 fw-normal text-white">{{$post->title}}</p>
                 </div>
-                <div style="height: 3rem; overflow: hidden " >
-                    <p class="ms-1 fw-medium" style="word-wrap: break-word;">{{$post->content}}</p>
+                <div style="height: 3.5rem; overflow: hidden " >
+                    <p class="ms-1 text-secondary" style="text-indent: 10px; font-size: 12px;  word-wrap: break-word;">{{$post->content}}</p>
                 </div>
             </div>
        @endforeach

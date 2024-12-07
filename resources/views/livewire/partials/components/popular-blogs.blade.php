@@ -1,7 +1,9 @@
-<div class="d-flex flex-column gap-3 ps-2 pb-5">
-    <label class="text-white card-title display-3 overflow-y-hidden custom-title fw-medium" style="font-size:24px;">POPULAR BLOGS</label>
+<div class="" >
+    <label class="text-white card-title display-3 custom-title fw-medium" style="font-size:24px;">POPULAR BLOGS</label>
+<div class="d-flex flex-column gap-3 pb-5 overflow-y-scroll py-2  " style="height: 1000px" >
+    
         @foreach ($posts as $post)
-   <div  href="{{ route('view', ['postId' => $post->id]) }}" wire:navigate class="p-1 d-flex flex-row shadow-sm rounded " style="cursor: pointer; background-color: #101218; width: 680px; height: 220px; ">
+   <div  href="{{ route('view', ['postId' => $post->id]) }}" wire:navigate class="p-1 d-flex flex-row shadow-sm rounded  " style="cursor: pointer; background-color: #101218; width: 680px; height: 220px; ">
         <div class="card-body d-flex flex-column p-2 " style="width: 65%" >
             <div class="d-flex flex-row gap-1 text-white">
                 <img class="mt-1" src="{{ asset('storage/images/default.png') }}" style="height:35px; border-radius: 5px; " >
@@ -26,4 +28,5 @@
         </div>
    </div>
    @endforeach
+</div>
 </div>
