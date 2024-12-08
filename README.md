@@ -1,42 +1,34 @@
 # GameBlog - A Dynamic Blog Website
-## Overview 📌
-GameBlog is an interactive platform for gaming fans to sign up, log in, and dive into a world of gaming content. Users can create and share their own posts, engage with others by liking their content, and receive notifications. Explore trending blogs, stay informed with the latest game news, and discover a variety of game-related posts. Whether you're looking to express your gaming experiences or stay up-to-date with the community, GameBlog is your ultimate destination for all things gaming.
+
+## Overview 📌  
+**GameBlog** is an engaging platform for gaming enthusiasts to sign up, log in, and immerse themselves in a world of gaming content. Users can create and share posts, interact by liking content, and receive notifications. Explore trending blogs, stay updated with the latest game news, and discover a wide range of game-related posts. Whether you want to share your gaming experiences or keep up with the community, GameBlog is your go-to destination for everything gaming.
 
 ![Logo](overview.png)
 
-## Features 📌
- - Home Page
-    - Introduction Section: Brief overview of the platform
-    - Benefit Section: Highlights the advantages of using the platform
-    - Latest Properties: Showcases the most recent property listings
-    - Expert Section: Features industry experts offering advice or services
- - Propeties Page
-    - Filter: Search and filter properties based on various criteria (e.g. price, type)
-    - View Details: Detailed view of individual property listings
-    - Inquire: Option to inquire or contact about a specific property
- - News Page
-    - News Lists: Displays real estate-related news and updates.
- - About Page
-    - About Us Information: Information about the company, mission, and values.
- - Admin
-    - Dashboard
-        - total house sale
-        - total house rent
-        - total number house sales
-        - total inquiries
-        - Latest Sales
-        - Revenue Graph
-    - Property
-        - Create, read, update, and delete (CRUD) property listings
-    - Inquiries
-        - View and manage property inquiries.
-    - Inventory
-        - Create, read, update, and delete (CRUD) inventory.
-    - News
-        - Create, read, update, and delete (CRUD) news.
- - Login/Logout
+## Features 📌  
+
+- Popular Blogs 
+  A curated list showcasing the most popular and engaging blogs in the gaming world. This section highlights top-rated content based on user engagement and relevance to trending topics. Users can explore these blogs to stay on top of the latest discussions and developments in the gaming industry.
+
+- Recent Blogs 
+  A dynamic feed displaying the latest posts published by users across various gaming topics. This section is designed to keep users informed about fresh content and help them engage with the newest contributions from the community.
+
+- About Us 
+  - This section provides detailed information about the **GameBlog** platform, including its mission, vision, and the team behind its creation. The goal of GameBlog is to foster a thriving community of gamers, creators, and enthusiasts by offering a space for collaboration, sharing, and discovery.
+
+- Authenticated User 
+  - Timeline 
+    Users can easily access and view all of their own posts in one place, providing a personal feed where they can track and manage their content.
+  
+  - Notifications
+    Users receive instant notifications whenever their posts receive likes, comments, or other forms of interaction. This feature allows users to stay connected with their community and engage with content that matters most. They can navigate directly to the posts that have received likes or comments, making the interaction process more seamless.
+
+- Write Post
+    The platform enables users to share their thoughts, reviews, and insights about games, trends, and gaming culture. Whether it's a review of the latest release, a personal gaming experience, or a trend analysis, users can easily create and publish content that resonates with the gaming community.
+
+- Login/Logout
 
  ## Tech Stack 📌
  - Frontend: HTML, CSS, Bootstrap
- - Backend: PHP
+ - Backend: Laravel, Livewire
  - Database: MySQL
