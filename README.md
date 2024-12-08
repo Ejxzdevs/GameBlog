@@ -7,24 +7,24 @@
 
 ## Features 📌  
 
-- Popular Blogs 
-  A curated list showcasing the most popular and engaging blogs in the gaming world. This section highlights top-rated content based on user engagement and relevance to trending topics. Users can explore these blogs to stay on top of the latest discussions and developments in the gaming industry.
+- Popular Blogs: 
+  - A curated list showcasing the most popular and engaging blogs in the gaming world. This section highlights top-rated content based on user engagement and relevance to trending topics. Users can explore these blogs to stay on top of the latest discussions and developments in the gaming industry.
 
-- Recent Blogs 
-  A dynamic feed displaying the latest posts published by users across various gaming topics. This section is designed to keep users informed about fresh content and help them engage with the newest contributions from the community.
+- Recent Blogs:
+  - A dynamic feed displaying the latest posts published by users across various gaming topics. This section is designed to keep users informed about fresh content and help them engage with the newest contributions from the community.
 
-- About Us 
+- About Us: 
   - This section provides detailed information about the **GameBlog** platform . The goal of GameBlog is to foster a thriving community of gamers, creators, and enthusiasts by offering a space for collaboration, sharing, and discovery.
 
 - Authenticated User 
-  - Timeline 
-    Users can easily access and view all of their own posts in one place, providing a personal feed where they can track content.
+  - Timeline: 
+    - Users can easily access and view all of their own posts in one place, providing a personal feed where they can track content.
   
-  - Notifications
-    Users receive instant notifications whenever their posts receive likes interaction. This feature allows users to stay connected with their community and engage with content that matters most. They can navigate directly to the posts that have received likes, making the interaction process more seamless.
+  - Notifications:
+    - Users receive instant notifications whenever their posts receive likes interaction. This feature allows users to stay connected with their community and engage with content that matters most. They can navigate directly to the posts that have received likes, making the interaction process more seamless.
 
-- Write Post
-    The platform enables users to share their thoughts, reviews, and insights about games, trends, and gaming culture. Whether it's a review of the latest release, a personal gaming experience, or a trend analysis, users can easily create and publish content that resonates with the gaming community.
+- Write Post:
+    - The platform enables users to share their thoughts, reviews, and insights about games, trends, and gaming culture. Whether it's a review of the latest release, a personal gaming experience, or a trend analysis, users can easily create and publish content that resonates with the gaming community.
 
 - Login/Logout
 
