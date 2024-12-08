@@ -1,5 +1,5 @@
 <div >
-    <label class="text-white card-title display-3 overflow-y-hidden custom-title fw-medium" style="font-size:24px;">LATEST TRENDS</label>
+    <label class="text-white card-title fs-3 overflow-y-hidden russo-one-regular fw-medium" style="font-size:24px;">LATEST TRENDS</label>
     <div class="d-flex flex-column shadow-sm mt-2 gap-3 pb-5 px-3 rounded " style="cursor: pointer; background-color: #101218;">
        @foreach($posts as $post)
             <div href="{{ route('view', ['postId' => $post->id]) }}" wire:navigate class="d-flex flex-column ps-1 my-2">

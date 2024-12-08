@@ -1,5 +1,5 @@
 <div class="" >
-    <label class="text-white card-title display-3 custom-title fw-medium" style="font-size:24px;">POPULAR BLOGS</label>
+    <label class="text-white card-title fs-3 russo-one-regular fw-medium" style="font-size:24px;">POPULAR BLOGS</label>
 <div class="d-flex flex-column gap-3 pb-5 overflow-y-scroll py-2  " style="height: 1000px" >
     
         @foreach ($posts as $post)

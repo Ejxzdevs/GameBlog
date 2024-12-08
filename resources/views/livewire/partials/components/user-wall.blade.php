@@ -20,7 +20,7 @@
         </div>
     </div>
     <div class="ps-5"style="width: 60%">
-    <label class="ms-3 fs-5 fw-bold text-white p-0 m-0" >Posts</label>
+    <label class="ms-3 fs-3 russo-one-regular text-white p-0 m-0" >Timeline Posts</label>
     @foreach ($posts as $post)
     <div  href="{{ route('view', ['postId' => $post->id]) }}" wire:navigate class="my-2 p-1 d-flex flex-row shadow-sm rounded  " style="cursor: pointer; background-color: #101218; width: 680px; height: 220px; ">
         <div class="card-body d-flex flex-column p-2 " style="width: 65%" >

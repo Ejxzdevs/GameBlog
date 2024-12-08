@@ -1,7 +1,7 @@
 <div>
     <div class="d-flex align-items-center justify-content-center fm-lato fw-bold border mb-3 rounded" 
     style="height: 150px; background-image: url('{{ asset('storage/images/games.jpg') }}'); background-size: cover; background-position: center;">
-                <p class="fs-2" style="background: linear-gradient(45deg, #ffffff, #FF6F91, #181047); 
+                <p class="fs-2 russo-one-regular" style="background: linear-gradient(45deg, #ffffff, #FF6F91, #181047); 
                 -webkit-background-clip: text; background-clip: text; color: transparent;">
                 Game On: News, Reviews, and Everything in Between
             </p>
