@@ -23,10 +23,10 @@
   - Notifications:
     - Users receive instant notifications whenever their posts receive likes interaction. This feature allows users to stay connected with their community and engage with content that matters most. They can navigate directly to the posts that have received likes, making the interaction process more seamless.
 
-- Write Post:
+  - Write Post:
     - The platform enables users to share their thoughts, reviews, and insights about games, trends, and gaming culture. Whether it's a review of the latest release, a personal gaming experience, or a trend analysis, users can easily create and publish content that resonates with the gaming community.
 
-- Login/Logout
+  - Login/Logout
 
  ## Tech Stack 📌
  - Frontend: HTML, CSS, Bootstrap
