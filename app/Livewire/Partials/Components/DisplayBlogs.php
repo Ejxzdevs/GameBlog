@@ -14,11 +14,11 @@ class DisplayBlogs extends Component
     public function render()
     {
         $posts = Post::query()
-    ->when($this->name, function ($query) {
+            ->when($this->name, function ($query) {
         $query->where('title', 'like', '%' . $this->name . '%');
-    })
-    ->inRandomOrder() // Randomizes the display order
-    ->paginate(9);
+        })
+        ->inRandomOrder()
+        ->paginate(9);
         return view('livewire.partials.components.display-blogs', ['posts' => $posts]);
     }
 }
