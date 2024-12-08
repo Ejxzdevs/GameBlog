@@ -6,13 +6,13 @@
                 Game On: News, Reviews, and Everything in Between
             </p>
         </div>
-        <div class="d-flex ps-5 my-3">
+        <div class="d-flex ps-5 my-3 justify-content-center ">
             <div class="rounded d-flex flex-col align-items-center gap-2 px-2" style="width: 350px; height: 2.5rem; border: 2px #181047 solid; background-color:aliceblue; " >
                 <i class="bi bi-search" style="color: #181047" ></i>
                 <input class="w-100 h-100 rounded p-1"  wire:model.live="name" type="text" style="border: none; outline: none; font-size: 12px; background-color: transparent;" placeholder="Search Title:" >
             </div>
         </div>  
-        <div class="h-auto d-flex flex-wrap gap-3 ps-5 align-items-center border-secondary-50" style="padding: 0 2rem">
+        <div class="h-auto d-flex flex-wrap gap-4 ps-5 justify-content-center border-secondary-50" style="padding: 0 2rem">
             {{-- Card --}}
         @foreach ($posts as $post)
         @php
