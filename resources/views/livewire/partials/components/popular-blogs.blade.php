@@ -6,7 +6,7 @@
    <div  href="{{ route('view', ['postId' => $post->id]) }}" wire:navigate class="p-1 d-flex flex-row shadow-sm rounded  " style="cursor: pointer; background-color: #101218; width: 680px; height: 220px; ">
         <div class="card-body d-flex flex-column p-2 " style="width: 65%" >
             <div class="d-flex flex-row gap-1 text-white">
-                <img class="mt-1" src="{{ asset('storage/images/default.png') }}" style="height:35px; border-radius: 5px; " >
+                <img class="mt-1" src="{{ asset('storage/images/default.png') }}" style="height:35px;  border-radius: 5px; " >
                 <div class="flex-column">
                     <label class="text-sm-end fw-medium nunito" style="font-size: 12px">{{$post->user->email}}</label>
                     <p style="font-size:.7rem; color:#2e79f2;">{{ $post->created_at->format('F Y g:i a') }}</p>
@@ -24,7 +24,7 @@
             </div>
         </div>
         <div class="d-flex justify-content-center align-items-center p-1" style="width: 35%"> 
-            <img src="{{ asset('storage/' . $post->image_url) }}" class="px-1 mt-3" style="height:100px; width: 35% object-fit:fill; ">
+            <img src="{{ asset('storage/' . $post->image_url) }}" class="px-1 mt-3" style="height:100px; width:240px; object-fit:fill; ">
         </div>
    </div>
    @endforeach
