@@ -9,10 +9,10 @@
           </p>
       </div>
   <div class="d-flex flex-row ps-3 pb-3 gap-3 overflow-hidden" style=" height: 133vh;  " >
-    <div class="mt-3 " style="width:65%; ">
+    <div class="mt-3 " style="width:55%; ">
         @livewire('partials.components.popular-blogs')
     </div>
-    <div class="mt-3" style="width:35%;">
+    <div class="mt-3 pe-3" style="width:43%;">
       @livewire('partials.components.latest-blogs')
     </div>
   </div>
