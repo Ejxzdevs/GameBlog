@@ -1,19 +1,19 @@
 <div class="w-100 d-flex flex-row ">
     <div style="width: 40%">
         <div class="rounded d-flex gap-4 justify-content-end ms-4" style="width: 100%; height: 450px;" >
-            <div style=" height: 67%; width: 97%; margin-top: 38px; "  >
+            <div style=" height: 62%; width: 80%; margin: 52px 40px 0 0;  "  >
                 <div class="w-100 h-100 border" style="border-radius: 10px; background-image: linear-gradient(to bottom,
                 white 0%,
-                white 35%,
-                black 35%,
-                black 100%
+                white 40%,
+                #101218 40%,
+                #101218 100%
                 ) " >
                     <div class="align-items-center pt-5 ps-5" style="height: 70%; " >
-                        <img class="ms-3 mt-3" src="{{ asset('storage/images/edit-profile.png') }}" style="height: 6rem; border: solid 7px black; border-radius: 50%;">
-                        <p class="text-white mt-1 fw-medium ms-4 fs-5 nunito" >{{Session::get('user_email')}}</p>
+                        <img class="ms-3 mt-3" src="{{ asset('storage/images/edit-profile.png') }}" style="height: 5.5rem; border: solid 7px black; border-radius: 50%;">
+                        <p class="text-white mt-1 ms-4 fs-5 nunito" >{{Session::get('user_email')}}</p>
                     </div>
                     <div class="d-flex justify-content-center align-items-center" style="height: 30%; "  >
-                        <button class="rounded text-white fw-medium py-1 border" style="width: 70%; background-color: #676971" >EDIT PROFILE</button>
+                        <button class="rounded text-white fw-medium py-1 border nunito;" style="width: 70%; background-color: #676971; font-size: 14px; letter-spacing: 1px;" >EDIT PROFILE</button>
                     </div>
                 </div>
             </div>
