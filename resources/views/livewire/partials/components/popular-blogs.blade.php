@@ -1,6 +1,6 @@
 <div class="" >
     <label class="text-white card-title fs-3 russo-one-regular fw-medium" style="font-size:24px;">Popular Blogs</label>
-<div class="d-flex flex-column gap-3 pb-5 overflow-y-scroll py-2  " style="height: 1000px" >
+<div class="d-flex flex-column gap-3 pb-5 overflow-y-scroll py-2  " style="height: 1000px;  scrollbar-width: thin;" >
     
         @foreach ($posts as $post)
    <div  href="{{ route('view', ['postId' => $post->id]) }}" wire:navigate class="p-1 d-flex flex-row shadow-sm rounded  " style="cursor: pointer; background-color: #101218; width: 680px; height: 220px; ">

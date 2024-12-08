@@ -2,7 +2,7 @@
     <a class="nav-icon" wire:click="booleanNotification">
         <i class="bi bi-bell {{ $focus ? 'text-info ' : 'text-white' }}; "></i>
     </a>
-    <div class="notification overflow-y-auto py-2 px-2 " style="background-color:#181047; display: {{ $Notification ? 'block'  : 'none' }} ;">
+    <div class="notification overflow-y-auto py-2 px-2 " style="background-color:#181047; display: {{ $Notification ? 'block'  : 'none' }} ;  scrollbar-width: thin;">
         @foreach ($data as $post)
         <div class="d-flex justify-content-center align-items-center rounded border py-2 px-4 mt-2" style="background-color: #101218 ;" >
             <p class="text-white fw-lighter" >
