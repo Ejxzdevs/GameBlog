@@ -14,14 +14,14 @@
   A dynamic feed displaying the latest posts published by users across various gaming topics. This section is designed to keep users informed about fresh content and help them engage with the newest contributions from the community.
 
 - About Us 
-  - This section provides detailed information about the **GameBlog** platform, including its mission, vision, and the team behind its creation. The goal of GameBlog is to foster a thriving community of gamers, creators, and enthusiasts by offering a space for collaboration, sharing, and discovery.
+  - This section provides detailed information about the **GameBlog** platform . The goal of GameBlog is to foster a thriving community of gamers, creators, and enthusiasts by offering a space for collaboration, sharing, and discovery.
 
 - Authenticated User 
   - Timeline 
-    Users can easily access and view all of their own posts in one place, providing a personal feed where they can track and manage their content.
+    Users can easily access and view all of their own posts in one place, providing a personal feed where they can track content.
   
   - Notifications
-    Users receive instant notifications whenever their posts receive likes, comments, or other forms of interaction. This feature allows users to stay connected with their community and engage with content that matters most. They can navigate directly to the posts that have received likes or comments, making the interaction process more seamless.
+    Users receive instant notifications whenever their posts receive likes interaction. This feature allows users to stay connected with their community and engage with content that matters most. They can navigate directly to the posts that have received likes, making the interaction process more seamless.
 
 - Write Post
     The platform enables users to share their thoughts, reviews, and insights about games, trends, and gaming culture. Whether it's a review of the latest release, a personal gaming experience, or a trend analysis, users can easily create and publish content that resonates with the gaming community.
