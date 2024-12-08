@@ -4,10 +4,10 @@
     </a>
 <!-- Modal -->
 <div class="modal fade @if($showModal) show @endif " tabindex="-1" role="dialog " style="display: @if($showModal) block @else none @endif ; background-color: rgba(0, 0, 0, 0.7); ">
-    <div class="modal-dialog" role="document"  >
-        <div class="modal-content rounded" style="border:none; background-color: #181047; ">
+    <div class="modal-dialog pt-2" role="document"  >
+        <div class="modal-content rounded mt-5" style="border:none; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px);  ">
           <div class="modal-header" style="border: none">
-                <button style="border:none; background-color: #181047;" type="button" class="modal-close-btn" wire:click="closeLoginModal" aria-label="Close">
+                <button style="border:none; background-color: #181047;" type="button" class="modal-close-btn rounded" wire:click="closeLoginModal" aria-label="Close">
                     <i  class="text-white bi bi-x-lg"></i>
                 </button>
           </div>
@@ -15,7 +15,7 @@
               <div class="h-100 d-flex justify-content-center align-items-center">
                 <form wire:submit.prevent="UserEntry" class="signup-custom-form d-flex flex-column gap-4" autocomplete="off">
                     <div class="d-flex flex-column justify-content-center align-items-center pt-2 " style="height:15%;">
-                        <h1 class="fw-medium text-white fs-3" >User Login</h1>
+                        <h1 class="fw-medium text-white fs-3 orbitron" >Welcome To GameBlog</h1>
                     </div>
                     <div class="d-flex flex-column justify-content-center ps-5  " style="height: 20%;">
                         <label class="form-label fw-medium fs-6 text-white">Email</label>
