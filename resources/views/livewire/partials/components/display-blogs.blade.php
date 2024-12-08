@@ -1,7 +1,7 @@
 <div>
     <div class="d-flex align-items-center justify-content-center fm-lato fw-bold border mb-3 rounded" 
     style="height: 150px; background-image: url('{{ asset('storage/images/games.jpg') }}'); background-size: cover; background-position: center;">
-                <p class="fs-2 russo-one-regular" style="background: linear-gradient(45deg, #ffffff, #FF6F91, #181047); 
+                <p class="fs-2 orbitron " style="background: linear-gradient(45deg, #ffffff, #FF6F91, #181047); 
                 -webkit-background-clip: text; background-clip: text; color: transparent;">
                 Game On: News, Reviews, and Everything in Between
             </p>
@@ -32,7 +32,7 @@
                 <img src="{{ asset('storage/' . $post->image_url) }}" class="p-0 m-0" style="height:150px; width: 320px;  object-fit:fill; border: solid white 1px; ">
             </div>
                 <div class="px-3 mt-3 mb-2" style="height: 5px">
-                    <p class="text-primary" style="font-size: 10px:"  >{{$totalLikes}}</p>
+                    <p class="text-primary nunito" style="font-size: 10px:"  >{{$totalLikes}}</p>
                 </div>
                 <div class="card-body ">
                     <label class="text-white card-title overflow-y-hidden fw-medium fs-6" style="height:20px">{{$post->title}}</label>

@@ -1,7 +1,7 @@
 <div>
     <div class="welcome-container">
         <header class="header">
-            <h1>Welcome to the Game Blogs Community!</h1>
+            <h1 class="orbitron " >Welcome to the Game Blogs Community!</h1>
         </header>
         <section class="content nunito">
             <p>Where gamers come together to explore, share, and connect! Our website is designed as a vibrant forum where you can dive into a rich collection of posts about the latest games, industry news, and gaming strategies. Whether you're looking for in-depth game reviews, insightful articles, or just want to stay updated on the latest trends, our platform has something for everyone.</p>

@@ -20,7 +20,7 @@
                 $isLiked = Likes::ShowHearted($userId,$post->id);
             @endphp
             <div>
-                <a href="#" class="card-link fm-lato d-flex flex-row gap-1" style="text-decoration: none;"><i class="bi bi-heart-fill" style="color: {{  $isLiked ? 'red' : 'white' }};"></i> <span class="text-primary">{{$totalLikes}} </span></a>
+                <a href="#" class="card-link fm-lato d-flex flex-row gap-1" style="text-decoration: none;"><i class="bi bi-heart-fill" style="color: {{  $isLiked ? 'red' : 'white' }};"></i> <span class="text-primary nunito">{{$totalLikes}} </span></a>
             </div>
         </div>
         <div class="d-flex justify-content-center align-items-center p-1" style="width: 35%"> 
