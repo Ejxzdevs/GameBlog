@@ -12113,7 +12113,7 @@ html, body {
   margin-top: 3.5em;
   border: solid #d2d5d9 0.2px;
   list-style: none;
-  border-radius: 3px;
+  border-radius: 10px;
   z-index: 1;
   box-shadow: 1px 1px 1px 0.5px;
   padding-top: 0.5rem;
