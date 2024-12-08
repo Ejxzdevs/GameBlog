@@ -17,7 +17,7 @@
               </div>
 
               @if ($image)
-                  <img src="{{ $image->temporaryUrl() }}" alt="Uploaded Image" class="img-thumbnail mb-2" style="height: 280px; width: 400px;">
+                  <img src="{{ $image->temporaryUrl() }}" alt="Uploaded Image" class="img-thumbnail mb-2" style="height: 280px; width: 100%;">
                @endif
                 <input  wire:model="image" type="file" class="form-control mb-3">
                 <button type="submit" class="btn btn-primary letter-spacing-2 fw-medium" style="background-color: #183153 " >PUBLISH</button>
