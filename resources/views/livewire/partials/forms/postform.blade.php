@@ -2,7 +2,7 @@
     <div class="h-100 justify-content-center align-items-center d-flex" style="z-index:1;  ">
        <form wire:submit.prevent="create" class=" w-50 h-auto form-floating p-5 rounded shadow" style=" background-color:#101218; " >
           <div class="h-25 align-items-end d-flex">
-             <h3 class="text-white mb-3" >Create a Post</h3>
+             <h3 class="text-white mb-3 russo-one-regular fw-medium" >Create a Post</h3>
           </div>
           <div class="h-75 d-flex flex-column">
              <div class="form-floating mb-3">
