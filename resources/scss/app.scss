@@ -150,6 +150,21 @@ html,body{
    
 }
 
+.notification {
+    width: 350px; 
+    height: 420px; 
+    background-color: $primary-color;  
+    position: absolute;
+    top: 1px;
+    right: .2rem;
+    margin-top: 3.5em;
+    border: solid #d2d5d9.2px;
+    list-style: none;
+    border-radius: 3px;
+    z-index: 1;
+    box-shadow: 1px 1px 1px .5px;
+    padding-top: .5rem;
+}
 
 
 

@@ -12101,6 +12101,22 @@ html, body {
   color: #15e8e8;
 }
 
+.notification {
+  width: 350px;
+  height: 420px;
+  background-color: #EDF1FF;
+  position: absolute;
+  top: 1px;
+  right: 0.2rem;
+  margin-top: 3.5em;
+  border: solid #d2d5d9 0.2px;
+  list-style: none;
+  border-radius: 3px;
+  z-index: 1;
+  box-shadow: 1px 1px 1px 0.5px;
+  padding-top: 0.5rem;
+}
+
 .signin-custom-form {
   width: 280px;
   background-color: #181047;
