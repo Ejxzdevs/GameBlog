@@ -24,7 +24,7 @@
             <div class="d-flex flex-row gap-2 ps-3 pt-2">
                 <img class="mt-1 py-2 rounded" src="{{ asset('storage/images/default.png') }}" style="height:40px; " >
                 <div class="flex-column">
-                    <label class="text-sm-end fw-medium text-white" style="font-size: 12px" >{{$post->user->email}}</label>
+                    <label class="text-sm-end fw-medium text-white nunito" style="font-size: 12px" >{{$post->user->email}}</label>
                     <p style="font-size:.7rem; color:#2e79f2;">{{ $post->created_at->format('F Y g:i a') }}</p>
                 </div>
             </div>

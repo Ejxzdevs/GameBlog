@@ -8,7 +8,7 @@
             <div class="d-flex flex-row gap-1 text-white">
                 <img class="mt-1" src="{{ asset('storage/images/default.png') }}" style="height:35px; border-radius: 5px; " >
                 <div class="flex-column">
-                    <label class="text-sm-end fw-medium " style="font-size: 12px">{{$post->user->email}}</label>
+                    <label class="text-sm-end fw-medium nunito" style="font-size: 12px">{{$post->user->email}}</label>
                     <p style="font-size:.7rem; color:#2e79f2;">{{ $post->created_at->format('F Y g:i a') }}</p>
                 </div>
             </div>

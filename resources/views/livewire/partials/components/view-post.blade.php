@@ -4,7 +4,7 @@
             <div class="d-flex flex-row gap-2">
                 <img class="mt-1" src="{{ asset('storage/images/default.png') }}" style="height:40px;" >
                 <div class="flex-column">
-                    <label class="text-sm-end fw-medium">{{$username = explode('@',$post->user->email)[0]}}</label>
+                    <label class="text-sm-end fw-medium nunito">{{$username = explode('@',$post->user->email)[0]}}</label>
                     <p style="font-size:.7rem;">{{ $post->created_at->format('F Y g:i a') }}</p>
                 </div>
             </div>

@@ -10,7 +10,7 @@
                 ) " >
                     <div class="align-items-center pt-5 ps-5" style="height: 70%; " >
                         <img class="ms-3 mt-3" src="{{ asset('storage/images/edit-profile.png') }}" style="height: 6rem; border: solid 7px black; border-radius: 50%;">
-                        <p class="text-white mt-1 fw-medium ms-4 fs-5" >{{Session::get('user_email')}}</p>
+                        <p class="text-white mt-1 fw-medium ms-4 fs-5 nunito" >{{Session::get('user_email')}}</p>
                     </div>
                     <div class="d-flex justify-content-center align-items-center" style="height: 30%; "  >
                         <button class="rounded text-white fw-medium py-1 border" style="width: 70%; background-color: #676971" >EDIT PROFILE</button>
@@ -27,7 +27,7 @@
             <div class="d-flex flex-row gap-1 text-white">
                 <img class="mt-1" src="{{ asset('storage/images/default.png') }}" style="height:35px; border-radius: 5px; " >
                 <div class="flex-column">
-                    <label class="text-sm-end fw-medium " style="font-size: 12px" >{{$post->user->email}}</label>
+                    <label class="text-sm-end fw-medium nunito" style="font-size: 12px" >{{$post->user->email}}</label>
                     <p style="font-size:.7rem; color:#2e79f2;">{{ $post->created_at->format('F Y g:i a') }}</p>
                 </div>
             </div>
