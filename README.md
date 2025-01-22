@@ -29,6 +29,6 @@
   - Login/Logout
 
  ## Tech Stack 📌
-- **Frontend**: HTML, CSS, Bootstrap, Livewire
+- **Frontend**: HTML(BLADE), CSS, Bootstrap, Livewire
 - **Backend**: Laravel
 - **Database**: MySQL
