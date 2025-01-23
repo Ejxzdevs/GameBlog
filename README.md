@@ -3,6 +3,7 @@
 ## Overview 📌  
 **GameBlog** is an engaging platform for gaming enthusiasts to sign up, log in, and immerse themselves in a world of gaming content. Users can create and share posts, interact by liking content, and receive notifications. Explore trending blogs, stay updated with the latest game news, and discover a wide range of game-related posts. Whether you want to share your gaming experiences or keep up with the community, GameBlog is your go-to destination for everything gaming.
 
+## Sample Website Design Highlight
 ![Logo](overview.png)
 
 ## Features 📌  
